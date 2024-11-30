@@ -1,7 +1,11 @@
-# nyc_weather.csv contains new york city weather for first few days in the month of January. Write a program that can answer following,
-# What was the temperature on Jan 9?
-# What was the temperature on Jan 4?
-# Figure out data structure that is best for this problem
+# poem.txt Contains famous poem "Road not taken" by poet Robert Frost. 
+# You have to read this file in python and print every word and its count as show below. 
+# Think about the best data structure that you can use to solve this problem 
+# and figure out why you selected that specific data structure.
+
+#  'diverged': 2,
+#  'in': 3,
+#  'I': 8
 dict = {}
 count=1
 with open("poem.txt","r") as f:
@@ -13,6 +17,3 @@ with open("poem.txt","r") as f:
                 dict[token] +=1
             else:
                 dict[token]=1
-
-print(dict)
-            
